@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="images/LogoJC.png">
+        <title>Juragan Crepes</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        
+        <!-- Bootstrap Icon  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </head>
+    <body class="loginbg">
+        <!-- Main Konten -->
+        <div class="container mt-5">
+            <a href="Login.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="color: black; background-color: #F0F600; border-radius: 30px;">Login</a>
+            <a href="Signup.html" class="btn btn-light btn-lg active" role="button" aria-pressed="true" style="color: black; border-radius: 30px;">Sign-up</a>
+            <br>
+            <br>
+            <div class="row rounded">
+                <div class="col-md-6 pt-2" style="background-color:#F0F600; padding: 30px; border-radius: 15px; box-shadow: 0px 0px 7px 0px #000; margin-bottom: 1rem;">
+                    <form>
+                        <div class="form-group">
+                            <img src="images/LogoJC1.png" width="18%" style="margin-left: 12.5rem;">
+                            <br>
+                            <h1 style="text-align: center; font-size: 30px; font-weight: bold;">Welcome Back</h1><br>
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="you@gmail.com">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" onclick="lihatpassword()"> Show Password </input>
+                        </div>
+                        <a class="btn btn-primary" href="AL/JuraganCrepes.html" role="button" style="background-color: #00E5E8; color: black;">Next ></a>
+                        <a href="ForgotPW.html" style="padding: 20px; text-decoration: underline;">Forgot Password</a>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="text-center shadow-lg p-3 mb-4 mt-2" style="font-family: Arial; font-weight: bold; color: #F0F600; font-style: normal;"> Juragan Crepes </h1>
+                    <h1 class="text-center shadow-lg p-3 mb-4 mt-2" style="font-family: Arial; font-weight: 900; color: white; font-style: normal; font-size: 60px;"> Login </h1>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JavaScript Ditempatkan dibawah sendiri adalah untuk mempercepat proses load web-->
+        <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script>
+            function lihatpassword(){
+                var pass = document.getElementById("exampleInputPassword1");
+                if (pass.type=="password") {
+                    pass.type="email"
+                } 
+                else {
+                    pass.type="password"
+                }
+            }
+        </script>
+    </body>
+</html>
